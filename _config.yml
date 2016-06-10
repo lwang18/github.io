@@ -1,14 +1,14 @@
 # Site wide configuration
 
-title:            Site Title
+title:           AAABBBCCC Site Title
 locale:           en_US
 logo:
-url:		
+url:
 # Enter the following platform usernames if you would like for them to appear on your site.
 owner:
-  name: Your Name
+  name: Ling Wang
   avatar: bio-photo.jpg
-  bio: "A brief description of yourself."
+  bio: "AAAA brief description of yourself."
   email: #emailaddress
   disqus-shortname:
   twitter: #username
