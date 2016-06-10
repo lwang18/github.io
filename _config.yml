@@ -1,60 +1,30 @@
-# Site wide configuration
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-title:           AAABBBCCC Site Title
-locale:           en_US
-logo:
-url:
-# Enter the following platform usernames if you would like for them to appear on your site.
-owner:
-  name: Ling Wang
-  avatar: bio-photo.jpg
-  bio: "AAAA brief description of yourself."
-  email: #emailaddress
-  disqus-shortname:
-  twitter: #username
-  facebook: #username
-  google:
-    plus: #username
-    analytics:
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: #username
-  stackoverflow: #123456/username from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
-  xing: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  codepen: #username
+# Site settings
+title:        jekyllDecent
+subtitle:     Example Blog
+description:  This is the jekyllTheme example blog. It only exists to demonstrate how the theme looks and feels.
+keywords:     demo theme example github jekyll features
 
-#DO NOT EDIT BEYOND THIS POINT
-# Jekyll configuration
+baseurl:      "" # the subpath of your site, e.g. /blog
+url:          "http://jwillmer.github.io/jekyllDecent" # the base hostname & protocol for your site
+permalink:    /blog/:categories/:title
+cover:        /assets/mountain-cover.jpg
 
-permalink:   /:categories/:title/
-markdown:    kramdown
-highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: compressed
-gems:
-  - jekyll-sitemap
-
+# Build settings
+markdown: kramdown
 kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+  syntax_highlighter_opts:
+    disable: true
+include: ['_pages']
+exclude: [vendor]
+gems:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
